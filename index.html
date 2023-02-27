@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="header box">
+                <div class="answer">
+                    <p id="display"></p>
+                </div>
+            </div>
+            <div class="first row">
+                <button type="button" class="btn seven" data-value="7">
+                    7
+                </button>
+                <button type="button" class="btn eight" data-value="8">
+                    8
+                </button>
+                <button type="button" class="btn nine" data-value="9">9</button>
+                <button
+                    type="button"
+                    class="btn multiply"
+                    data-value="op"
+                    val="*"
+                >
+                    X
+                </button>
+            </div>
+            <div class="second row">
+                <button type="button" class="btn four" data-value="4">4</button>
+                <button type="button" class="btn five" data-value="5">5</button>
+                <button type="button" class="btn six" data-value="6">6</button>
+                <button type="button" class="btn minus" data-value="op" val="-">
+                    -
+                </button>
+            </div>
+            <div class="third row">
+                <button type="button" class="btn one" data-value="1">1</button>
+                <button type="button" class="btn two" data-value="2">2</button>
+                <button type="button" class="btn three" data-value="3">
+                    3
+                </button>
+                <button type="button" class="btn plus" data-value="op" val="+">
+                    +
+                </button>
+            </div>
+            <div class="forth row">
+                <button type="button" class="btn dot" data-value=".">.</button>
+                <button type="button" class="btn zero" data-value="0">0</button>
+                <button type="button" class="btn back" data-value="back">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+                <button
+                    type="button"
+                    class="btn divide"
+                    data-value="op"
+                    val="/"
+                >
+                    /
+                </button>
+            </div>
+            <div class="fifth row">
+                <button
+                    type="button"
+                    class="btn equals"
+                    data-value="equal"
+                    val="="
+                >
+                    =
+                </button>
+                <button type="button" class="btn clear" data-value="clear">
+                    AC
+                </button>
+            </div>
+        </div>
+        <div class="theme">
+            <button class="dark theme-btn" type="button">DARK</button>
+            <button class="light theme-btn" type="button">LIGHT</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
